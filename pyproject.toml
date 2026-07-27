@@ -1,0 +1,33 @@
+[project]
+name = "craftsman-map"
+version = "0.1.0"
+description = "代码库理解 CLI —— 地图+导航+全量理解三合一, 专为大模型设计"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+  {name = "craftsman-map contributors"}
+]
+dependencies = []   # MVP 零外部依赖, 纯标准库
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/craftsman-map"
+Source = "https://github.com/YOUR_USERNAME/craftsman-map"
+"Bug Tracker" = "https://github.com/YOUR_USERNAME/craftsman-map/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-cov",
+]
+
+[project.scripts]
+craftsman-map = "craftsman_map.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["craftsman_map*"]
