@@ -11,9 +11,9 @@ authors = [
 dependencies = []   # MVP 零外部依赖, 纯标准库
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/craftsman-map"
-Source = "https://github.com/YOUR_USERNAME/craftsman-map"
-"Bug Tracker" = "https://github.com/YOUR_USERNAME/craftsman-map/issues"
+Homepage = "https://github.com/EthanXue666/craftsman-map"
+Source = "https://github.com/EthanXue666/craftsman-map"
+"Bug Tracker" = "https://github.com/EthanXue666/craftsman-map/issues"
 
 [project.optional-dependencies]
 dev = [
