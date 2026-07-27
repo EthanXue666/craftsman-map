@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "craftsman-map": {
+      "command": "craftsman-map",
+      "args": ["serve-mcp"]
+    }
+  }
+}
