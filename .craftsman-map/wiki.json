@@ -1,0 +1,661 @@
+{
+ "clusters": {
+  "35": {
+   "title": "项目说明文档 · README.md",
+   "role": "核心",
+   "description": "项目的对外说明文档，声明核心价值：把任意代码库编译成分层知识图谱，通过确定性 CLI 让大模型精准理解代码，而非把整库塞进上下文。改动风险极低：文档，但 report 命令会从这里抽取项目目标。",
+   "source": "injected",
+   "key_symbols": [
+    "README.md"
+   ],
+   "files": [
+    "README.md"
+   ],
+   "fingerprint": "beb848d02b6bc42d",
+   "updated_at": "2026-07-21 01:09:22"
+  },
+  "36": {
+   "title": "模块执行入口 · __main__.py (1/2)",
+   "role": "入口",
+   "description": "支持 python -m mapcraftsman 方式启动，转发到 cli.main。改动风险极低：仅为执行入口转发。",
+   "source": "injected",
+   "key_symbols": [
+    "__main__.py"
+   ],
+   "files": [
+    "__main__.py"
+   ],
+   "fingerprint": "3816a5370d9314c7",
+   "updated_at": "2026-07-21 01:09:22"
+  },
+  "0": {
+   "title": "入口块 · cli.py",
+   "role": "入口",
+   "description": "角色: 入口\n规模: 1 文件 · 0 类 · 4 函数/方法\n关键符号: mapcraftsman/cli.py, _load_graph, _emit, build_parser, main\n主旨(取自docstring): map-craftsman CLI 入口",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/cli.py",
+    "_load_graph",
+    "_emit",
+    "build_parser",
+    "main"
+   ],
+   "files": [
+    "mapcraftsman/cli.py"
+   ],
+   "fingerprint": "c9146726d3fd4e66",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "5": {
+   "title": "解析块 · git_history.py",
+   "role": "解析",
+   "description": "角色: 解析\n规模: 1 文件 · 0 类 · 8 函数/方法\n关键符号: mapcraftsman/git_history.py, available, _iter_commits_dulwich, _iter_commits_subprocess, analyze\n主旨(取自docstring): Git 历史维度 (GitNexus 式导航能力)",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/git_history.py",
+    "available",
+    "_iter_commits_dulwich",
+    "_iter_commits_subprocess",
+    "analyze"
+   ],
+   "files": [
+    "mapcraftsman/git_history.py"
+   ],
+   "fingerprint": "8026c25250ec7ec2",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "7": {
+   "title": "测试块 · store.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 4 文件 · 2 类 · 44 函数/方法\n关键符号: Indexer, CodeGraph, mapcraftsman/indexer.py, Indexer._load_gitignore_dirs, mapcraftsman/graph/store.py\n主旨(取自docstring): 索引器 —— INGEST 层入口",
+   "source": "rule",
+   "key_symbols": [
+    "Indexer",
+    "CodeGraph",
+    "mapcraftsman/indexer.py",
+    "Indexer._load_gitignore_dirs",
+    "mapcraftsman/graph/store.py"
+   ],
+   "files": [
+    "mapcraftsman/graph/store.py",
+    "mapcraftsman/indexer.py",
+    "tests/test_git_history.py",
+    "tests/test_honesty.py"
+   ],
+   "fingerprint": "ac57de4308002c3c",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "16": {
+   "title": "入口块 · mcp_server.py (1/2)",
+   "role": "入口",
+   "description": "角色: 入口\n规模: 1 文件 · 0 类 · 9 函数/方法\n关键符号: mapcraftsman/mcp_server.py, _GraphCache.get, handle_request, serve, PROTOCOL_VERSION\n主旨(取自docstring): map-craftsman MCP Server",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/mcp_server.py",
+    "_GraphCache.get",
+    "handle_request",
+    "serve",
+    "PROTOCOL_VERSION"
+   ],
+   "files": [
+    "mapcraftsman/mcp_server.py"
+   ],
+   "fingerprint": "5c804f1fca0e8b49",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "17": {
+   "title": "核心块 · mcp_server.py (2/2)",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 1 类 · 3 函数/方法\n关键符号: _GraphCache, _GraphCache.__init__, _GraphCache.set, _GraphCache.invalidate",
+   "source": "rule",
+   "key_symbols": [
+    "_GraphCache",
+    "_GraphCache.__init__",
+    "_GraphCache.set",
+    "_GraphCache.invalidate"
+   ],
+   "files": [
+    "mapcraftsman/mcp_server.py"
+   ],
+   "fingerprint": "b4a76577265892eb",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "37": {
+   "title": "核心块 · __init__.py (1/6)",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 0 类 · 0 函数/方法\n关键符号: mapcraftsman/__init__.py\n主旨(取自docstring): map-craftsman —— 代码库理解 CLI (地图 + 导航 + 全量理解三合一)。",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/__init__.py"
+   ],
+   "files": [
+    "mapcraftsman/__init__.py"
+   ],
+   "fingerprint": "363ca56e13f4195b"
+  },
+  "38": {
+   "title": "入口块 · __main__.py (2/2)",
+   "role": "入口",
+   "description": "角色: 入口\n规模: 1 文件 · 0 类 · 0 函数/方法\n关键符号: mapcraftsman/__main__.py",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/__main__.py"
+   ],
+   "files": [
+    "mapcraftsman/__main__.py"
+   ],
+   "fingerprint": "2a79096ef6041f00"
+  },
+  "2": {
+   "title": "核心块 · core.py",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 0 类 · 9 函数/方法\n关键符号: mapcraftsman/commands/core.py, _page_meta, cmd_map, cmd_impact, cmd_hotspots\n主旨(取自docstring): 核心命令层 —— 给大模型的\"遥控器\"",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/commands/core.py",
+    "_page_meta",
+    "cmd_map",
+    "cmd_impact",
+    "cmd_hotspots"
+   ],
+   "files": [
+    "mapcraftsman/commands/core.py"
+   ],
+   "fingerprint": "e7363ea150254a07",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "3": {
+   "title": "测试块 · report.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 11 函数/方法\n关键符号: mapcraftsman/commands/report.py, _language_breakdown, _programming_langs, cmd_orient, _extract_goal\n主旨(取自docstring): ORIENT / REPORT 命令层 —— 项目级认知入口",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/commands/report.py",
+    "_language_breakdown",
+    "_programming_langs",
+    "cmd_orient",
+    "_extract_goal"
+   ],
+   "files": [
+    "mapcraftsman/commands/report.py"
+   ],
+   "fingerprint": "b996be6ec0850638",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "1": {
+   "title": "入口块 · understand.py",
+   "role": "入口",
+   "description": "角色: 入口\n规模: 1 文件 · 0 类 · 10 函数/方法\n关键符号: mapcraftsman/commands/understand.py, _wiki_first_line, _cluster_risk, cmd_wiki, cmd_describe\n主旨(取自docstring): UNDERSTAND / VIEW / TRACE 命令封装层",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/commands/understand.py",
+    "_wiki_first_line",
+    "_cluster_risk",
+    "cmd_wiki",
+    "cmd_describe"
+   ],
+   "files": [
+    "mapcraftsman/commands/understand.py"
+   ],
+   "fingerprint": "6a1cf2bbe0adc06f",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "39": {
+   "title": "核心块 · __init__.py (2/6)",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 0 类 · 0 函数/方法\n关键符号: mapcraftsman/commands/__init__.py",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/commands/__init__.py"
+   ],
+   "files": [
+    "mapcraftsman/commands/__init__.py"
+   ],
+   "fingerprint": "0c6d0fae96045da3"
+  },
+  "8": {
+   "title": "Linker · 引用消解 + 消解/聚类测试",
+   "role": "测试",
+   "description": "link 把解析阶段产生的原始引用(继承/调用/import)消解到项目内真实节点：能消解的高置信、无法消解的降低置信但不静默丢弃、多候选标记 ambiguous、重复边去重保最高置信。改动风险高：影响面分析(impact)的准确性完全取决于消解质量。",
+   "source": "injected",
+   "key_symbols": [
+    "mapcraftsman/graph/linker.py",
+    "tests/test_linker_cluster.py",
+    "test_inherits_resolved_to_real_class",
+    "test_call_resolved_within_file",
+    "test_used_by_not_lost"
+   ],
+   "files": [
+    "mapcraftsman/graph/linker.py",
+    "tests/test_linker_cluster.py"
+   ],
+   "fingerprint": "55a027376dce8999",
+   "updated_at": "2026-07-21 01:09:22"
+  },
+  "10": {
+   "title": "数据模型块 · model.py",
+   "role": "数据模型",
+   "description": "角色: 数据模型\n规模: 3 文件 · 7 类 · 33 函数/方法\n关键符号: NodeKind, EdgeKind, ParseResult, _Extractor, TreeSitterParser\n主旨(取自docstring): 8 种节点类型 —— 系统'认识'代码库里的哪些东西。",
+   "source": "rule",
+   "key_symbols": [
+    "NodeKind",
+    "EdgeKind",
+    "ParseResult",
+    "_Extractor",
+    "TreeSitterParser"
+   ],
+   "files": [
+    "mapcraftsman/graph/model.py",
+    "mapcraftsman/parsers/base.py",
+    "mapcraftsman/parsers/ts_parser.py"
+   ],
+   "fingerprint": "d903fab9c3cb23fe",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "40": {
+   "title": "核心块 · __init__.py (3/6)",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 0 类 · 0 函数/方法\n关键符号: mapcraftsman/graph/__init__.py",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/graph/__init__.py"
+   ],
+   "files": [
+    "mapcraftsman/graph/__init__.py"
+   ],
+   "fingerprint": "d5ccedf0b7bcb609"
+  },
+  "15": {
+   "title": "解析块 · doc_parser.py",
+   "role": "解析",
+   "description": "角色: 解析\n规模: 1 文件 · 2 类 · 3 函数/方法\n关键符号: DocParser, AssetParser, mapcraftsman/parsers/doc_parser.py, DocParser.parse, AssetParser.parse\n主旨(取自docstring): 文档 & 资产解析器",
+   "source": "rule",
+   "key_symbols": [
+    "DocParser",
+    "AssetParser",
+    "mapcraftsman/parsers/doc_parser.py",
+    "DocParser.parse",
+    "AssetParser.parse"
+   ],
+   "files": [
+    "mapcraftsman/parsers/doc_parser.py"
+   ],
+   "fingerprint": "536a7a630c562933",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "21": {
+   "title": "解析块 · python_parser.py",
+   "role": "解析",
+   "description": "角色: 解析\n规模: 1 文件 · 2 类 · 17 函数/方法\n关键符号: _Visitor, PythonParser, mapcraftsman/parsers/python_parser.py, _seg, _is_stub_body\n主旨(取自docstring): Python 解析器 (基于内置 ast, 零依赖)",
+   "source": "rule",
+   "key_symbols": [
+    "_Visitor",
+    "PythonParser",
+    "mapcraftsman/parsers/python_parser.py",
+    "_seg",
+    "_is_stub_body"
+   ],
+   "files": [
+    "mapcraftsman/parsers/python_parser.py"
+   ],
+   "fingerprint": "74027e463c42b9cb",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "41": {
+   "title": "解析块 · __init__.py (4/6)",
+   "role": "解析",
+   "description": "角色: 解析\n规模: 1 文件 · 0 类 · 0 函数/方法\n关键符号: mapcraftsman/parsers/__init__.py",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/parsers/__init__.py"
+   ],
+   "files": [
+    "mapcraftsman/parsers/__init__.py"
+   ],
+   "fingerprint": "395ce5ae7c8b6e0b"
+  },
+  "24": {
+   "title": "测试块 · trace.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 6 函数/方法\n关键符号: mapcraftsman/understand/trace.py, trace_chain, trace_chain._fold, _is_test_node, list_entrypoints\n主旨(取自docstring): TRACE 工作链 —— 追踪\"请求从入口到出口走过哪些函数\"",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/understand/trace.py",
+    "trace_chain",
+    "trace_chain._fold",
+    "_is_test_node",
+    "list_entrypoints"
+   ],
+   "files": [
+    "mapcraftsman/understand/trace.py"
+   ],
+   "fingerprint": "e39ee78792dd48f9",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "26": {
+   "title": "核心块 · view.py",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 0 类 · 3 函数/方法\n关键符号: mapcraftsman/understand/view.py, build_layers, LAYER_ORDER, _KEYWORDS, _classify_cluster\n主旨(取自docstring): VIEW 分层视图 —— 自动把功能块归到架构层",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/understand/view.py",
+    "build_layers",
+    "LAYER_ORDER",
+    "_KEYWORDS",
+    "_classify_cluster"
+   ],
+   "files": [
+    "mapcraftsman/understand/view.py"
+   ],
+   "fingerprint": "4268f12e0437673e",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "28": {
+   "title": "核心块 · wiki.py",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 0 类 · 14 函数/方法\n关键符号: mapcraftsman/understand/wiki.py, cluster_fingerprint, all_cluster_fingerprints, load_wiki, _cluster_role\n主旨(取自docstring): UNDERSTAND 理解层 —— 把代码翻译成人话",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/understand/wiki.py",
+    "cluster_fingerprint",
+    "all_cluster_fingerprints",
+    "load_wiki",
+    "_cluster_role"
+   ],
+   "files": [
+    "mapcraftsman/understand/wiki.py"
+   ],
+   "fingerprint": "d99d5b6e5e3c37ac",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "42": {
+   "title": "核心块 · __init__.py (5/6)",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 0 类 · 0 函数/方法\n关键符号: mapcraftsman/understand/__init__.py",
+   "source": "rule",
+   "key_symbols": [
+    "mapcraftsman/understand/__init__.py"
+   ],
+   "files": [
+    "mapcraftsman/understand/__init__.py"
+   ],
+   "fingerprint": "f078439d699b21ea"
+  },
+  "43": {
+   "title": "核心块 · index.md (1/2)",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 0 类 · 0 函数/方法\n关键符号: memory/wiki/index.md\n主旨(取自docstring): title: Wiki 主索引",
+   "source": "rule",
+   "key_symbols": [
+    "memory/wiki/index.md"
+   ],
+   "files": [
+    "memory/wiki/index.md"
+   ],
+   "fingerprint": "af3f88cdbbdfa667"
+  },
+  "44": {
+   "title": "核心块 · log.md",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 0 类 · 0 函数/方法\n关键符号: memory/wiki/log.md\n主旨(取自docstring): - [2026-07-21 12:21:31] **manual_create**: 主脑创建: map-craftsman/index.md",
+   "source": "rule",
+   "key_symbols": [
+    "memory/wiki/log.md"
+   ],
+   "files": [
+    "memory/wiki/log.md"
+   ],
+   "fingerprint": "ff0ac83c1ebf001e"
+  },
+  "45": {
+   "title": "核心块 · index.md (2/2)",
+   "role": "核心",
+   "description": "角色: 核心\n规模: 1 文件 · 0 类 · 0 函数/方法\n关键符号: memory/wiki/map-craftsman/index.md\n主旨(取自docstring): title: map-craftsman：代码库理解 CLI",
+   "source": "rule",
+   "key_symbols": [
+    "memory/wiki/map-craftsman/index.md"
+   ],
+   "files": [
+    "memory/wiki/map-craftsman/index.md"
+   ],
+   "fingerprint": "9cbba7085fde0db2"
+  },
+  "29": {
+   "title": "测试块 · conftest.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 3 函数/方法\n关键符号: tests/conftest.py, sample_repo, indexed_graph, reloaded_graph\n主旨(取自docstring): pytest 公共夹具",
+   "source": "rule",
+   "key_symbols": [
+    "tests/conftest.py",
+    "sample_repo",
+    "indexed_graph",
+    "reloaded_graph"
+   ],
+   "files": [
+    "tests/conftest.py"
+   ],
+   "fingerprint": "32dc8b818ef13312",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "30": {
+   "title": "测试块 · test_auto_rebuild.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 11 函数/方法\n关键符号: tests/test_auto_rebuild.py, _wait_rebuild_done, test_legacy_index_without_fingerprint_triggers_rebuild, _write, _build_index\n主旨(取自docstring): 自动陈旧检测 + 重建测试",
+   "source": "rule",
+   "key_symbols": [
+    "tests/test_auto_rebuild.py",
+    "_wait_rebuild_done",
+    "test_legacy_index_without_fingerprint_triggers_rebuild",
+    "_write",
+    "_build_index"
+   ],
+   "files": [
+    "tests/test_auto_rebuild.py"
+   ],
+   "fingerprint": "af17f9c42159a0f2",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "31": {
+   "title": "测试块 · test_commands.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 13 函数/方法\n关键符号: tests/test_commands.py, test_map_progressive_disclosure, test_search_fuzzy, test_symbol_by_name_fallback, test_impact_nonzero\n主旨(取自docstring): 命令层测试 —— 验证 6 个给大模型的命令输出契约稳定。",
+   "source": "rule",
+   "key_symbols": [
+    "tests/test_commands.py",
+    "test_map_progressive_disclosure",
+    "test_search_fuzzy",
+    "test_symbol_by_name_fallback",
+    "test_impact_nonzero"
+   ],
+   "files": [
+    "tests/test_commands.py"
+   ],
+   "fingerprint": "1c9709b17ca24e81",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "6": {
+   "title": "测试块 · test_git_history.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 8 函数/方法\n关键符号: tests/test_git_history.py, git_repo, git_repo._write, git_repo._commit, test_available\n主旨(取自docstring): git 历史维度测试",
+   "source": "rule",
+   "key_symbols": [
+    "tests/test_git_history.py",
+    "git_repo",
+    "git_repo._write",
+    "git_repo._commit",
+    "test_available"
+   ],
+   "files": [
+    "tests/test_git_history.py"
+   ],
+   "fingerprint": "0b8573eb465d2df9",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "33": {
+   "title": "测试块 · test_honesty.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 23 函数/方法\n关键符号: tests/test_honesty.py, test_p0_meta_has_blind_spots_field, test_p0_exclusions_transparent, test_p0_schema_version_recorded, test_p1_map_pagination\n主旨(取自docstring): 诚实性地基测试 (P0-P4)",
+   "source": "rule",
+   "key_symbols": [
+    "tests/test_honesty.py",
+    "test_p0_meta_has_blind_spots_field",
+    "test_p0_exclusions_transparent",
+    "test_p0_schema_version_recorded",
+    "test_p1_map_pagination"
+   ],
+   "files": [
+    "tests/test_honesty.py"
+   ],
+   "fingerprint": "7c65ce8f965f8325",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "18": {
+   "title": "测试块 · test_mcp.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 11 函数/方法\n关键符号: tests/test_mcp.py, _fresh_cache, test_tools_have_valid_schema, test_notification_returns_none, test_index_and_call_flow\n主旨(取自docstring): MCP server 协议测试 —— 验证 JSON-RPC 契约与工具调用。",
+   "source": "rule",
+   "key_symbols": [
+    "tests/test_mcp.py",
+    "_fresh_cache",
+    "test_tools_have_valid_schema",
+    "test_notification_returns_none",
+    "test_index_and_call_flow"
+   ],
+   "files": [
+    "tests/test_mcp.py"
+   ],
+   "fingerprint": "a9ca6953f55c789b",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "20": {
+   "title": "测试块 · test_multilang.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 6 函数/方法\n关键符号: tests/test_multilang.py, test_mixed_repo_end_to_end, test_js_cross_file_call_resolves, test_js_function_and_call, test_js_class_inherits\n主旨(取自docstring): 多语言解析测试 (JS / TS / Go, 基于 tree-sitter)。",
+   "source": "rule",
+   "key_symbols": [
+    "tests/test_multilang.py",
+    "test_mixed_repo_end_to_end",
+    "test_js_cross_file_call_resolves",
+    "test_js_function_and_call",
+    "test_js_class_inherits"
+   ],
+   "files": [
+    "tests/test_multilang.py"
+   ],
+   "fingerprint": "9fe0b50118ec3471",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "13": {
+   "title": "测试块 · test_parser.py",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 12 函数/方法\n关键符号: tests/test_parser.py, test_module_nodes_created, test_class_and_interface_detection, test_function_and_method_nodes, test_module_level_constant\n主旨(取自docstring): 解析层测试 —— 验证 PythonParser / DocParser / AssetParser 提取正确的节点与边。",
+   "source": "rule",
+   "key_symbols": [
+    "tests/test_parser.py",
+    "test_module_nodes_created",
+    "test_class_and_interface_detection",
+    "test_function_and_method_nodes",
+    "test_module_level_constant"
+   ],
+   "files": [
+    "tests/test_parser.py"
+   ],
+   "fingerprint": "2f1b01407312338f",
+   "stale_note": "代码已变更, 原 LLM 描述已失效, 当前为规则兜底"
+  },
+  "34": {
+   "title": "测试 · 存储序列化与 CLI 端到端",
+   "role": "测试",
+   "description": "验证图存盘再加载的节点/边一致性、meta 关键字段、CLI 端到端(index→map→impact 输出合法 JSON)、默认紧凑 JSON 省 token。改动风险低：序列化与 CLI 的回归防线。",
+   "source": "injected",
+   "key_symbols": [
+    "tests/test_store_cli.py",
+    "test_save_load_roundtrip",
+    "test_meta_fields",
+    "test_cli_index_and_query",
+    "test_cli_compact_json_default"
+   ],
+   "files": [
+    "tests/test_store_cli.py"
+   ],
+   "fingerprint": "df3288122fe8c7c3",
+   "updated_at": "2026-07-21 01:09:22"
+  },
+  "46": {
+   "title": "测试块 · __init__.py (6/6)",
+   "role": "测试",
+   "description": "角色: 测试\n规模: 1 文件 · 0 类 · 0 函数/方法\n关键符号: tests/__init__.py",
+   "source": "rule",
+   "key_symbols": [
+    "tests/__init__.py"
+   ],
+   "files": [
+    "tests/__init__.py"
+   ],
+   "fingerprint": "6fa398a7885e9871"
+  }
+ },
+ "project": {
+  "description": "map-craftsman 是一个代码库理解 CLI 工具，把任意代码库编译成分层知识图谱(节点=模块/类/函数，边=继承/调用/import)，通过一组确定性命令(map/orient/search/impact/trace/wiki 等)让大模型精准理解代码，而不必把整个代码库塞进上下文。核心设计铁律：工具只报客观事实、主观判断留给调用方大模型；对静态分析抓不到的边界(动态派发/回调/跨语言)诚实标注；渐进披露 + 分页控制返回体积以节省 token。纯 Python 内置 ast 解析(零依赖)，可选 tree-sitter 支持多语言。",
+  "source": "injected",
+  "updated_at": "2026-07-21 01:10:07"
+ },
+ "needs_description": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  10,
+  13,
+  15,
+  16,
+  17,
+  18,
+  20,
+  21,
+  24,
+  26,
+  28,
+  29,
+  30,
+  31,
+  33,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46
+ ],
+ "stale_clusters": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  10,
+  13,
+  15,
+  16,
+  17,
+  18,
+  20,
+  21,
+  24,
+  26,
+  28,
+  29,
+  30,
+  31,
+  33
+ ]
+}
