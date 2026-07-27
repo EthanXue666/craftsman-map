@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [
-  {name = "craftsman-map contributors"}
+  {name = "Ethan Xue", email = "545118959@qq.com"}
 ]
 dependencies = []   # MVP 零外部依赖, 纯标准库
 
