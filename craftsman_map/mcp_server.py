@@ -196,7 +196,7 @@ def _tool_defs() -> list[dict]:
         {
             "name": "craftsman_map_wiki",
             "description": "生成/读取项目人话描述 (UNDERSTAND 层)。"
-                           "改代码前用它搞清楚每个功能块"是干什么的"，避免改了不该改的地方。"
+                           "改代码前用它搞清楚每个功能块「是干什么的」，避免改了不该改的地方。"
                            "返回每个功能块的中文描述、关键职责、主要类/函数、对外依赖。"
                            "调用方可读取 raw_prompt 字段后用自身模型生成高质量描述，"
                            "再调 craftsman_map_inject_desc 写回。",
